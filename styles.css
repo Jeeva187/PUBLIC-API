@@ -1,39 +1,54 @@
-body {
-    background-color:yellow;
-}
-
-.container {
-    margin-top: 10px;
-}
-
-.card {
-    background-color: lightgreen;
-    height: 300px;
-    margin: 10px;
-}
-
-.card-title {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-}
-
-.card-text {
-    font-size: 0.875rem;
-}
-
 .user-data-box {
-    background-color: red;
+    background-color: blue;
     padding: 10px;
     text-align: left;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.9rem;
     margin-bottom: 20px;
 }
 
-#userList {
-    margin: 80px;
+.container {
+    margin-top: 20px;
 }
 
-.row {
+.card {
+    background-color: lightskyblue;
+    width: 250px;
+    height: 85%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    margin: 0;
+    overflow: hidden;
+}
+
+#userList {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.row {
+    flex: 0 0 100%;
+}
+
+.col-md-3 {
+    padding: 0 10px;
 }
